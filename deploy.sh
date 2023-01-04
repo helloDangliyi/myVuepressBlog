@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:helloDangliyi/helloDangliyi.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:helloDangliyi/myVuepressBlog.git master:dangBlog
+git push -f git@github.com:helloDangliyi/myVuepressBlog.git master:gh-pages
 
 cd -
