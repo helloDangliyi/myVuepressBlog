@@ -13,7 +13,7 @@ tags:
 
 在 config.js 中添加配置
 
-```vue
+```js{1,4}
 module.exports = { plugins: [ ['cursor-effects', { size: 2, // size of the
 particle, default: 2 shape: 'star', // ['star' | 'circle'], // shape of the
 particle, default: 'star' zIndex: 999999999, // z-index property of the canvas,
@@ -24,10 +24,21 @@ default: 999999999 }] ], }
 
    `npm add vuepress-plugin-dynamic-title -D`
 
-```vue
+```js
 module.exports = {
-plugins: [ ['dynamic-title', { showIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae', showText: '客官欢迎回来~', hideIcon: 'https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae', hideText: '客官不要走嘛~', recoverTime: 2000, }] ]
-}
+  plugins: [
+    [
+      "dynamic-title",
+      {
+        showIcon:
+          "https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae",
+        showText: "客官欢迎回来~",
+        hideIcon:
+          "https://www.typescriptlang.org/favicon-32x32.png?v=8944a05a8b601855de116c8a56d3b3ae",
+        hideText: "客官不要走嘛~",
+        recoverTime: 2000,
+      },
+    ],
+  ],
+};
 ```
-
-
