@@ -1,21 +1,27 @@
 module.exports = {
   theme: 'reco', //主题的使用
-  // \'s blog
   title: 'Dang',
-  description: '嘿嘿',
+  // description: '嘿嘿',//首页文档描述
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/head.png' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
-  base: '/myVuepressBlog/', // 这是部署到github相关的配置
+  base: '/myVuepressBlog/', // 这是部署到github仓库的名称相关的配置
   markdown: {
-    lineNumbers: false // 代码块显示行号
+    lineNumbers: true // 代码块显示行号
   },
   plugins: [
     ['cursor-effects', {
       size: 2, // size of the particle, default: 2
       shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
       zIndex: 999999999, // z-index property of the canvas, default: 999999999
-    }]
+    }],
+    ['dynamic-title', {
+      showIcon: '/head.png',
+      showText: '客官欢迎回来~',
+      hideIcon: '/head.png',
+      hideText: '客官不要走嘛~',
+      recoverTime: 2000,
+   }],
   ],
   themeConfig: {
     // 导航栏配置
@@ -37,6 +43,8 @@ module.exports = {
         ]
       },
     ],
+    authorAvatar: '/head.png',
+    type: "blog",
     // 标签
     blogConfig: {
       category: {
