@@ -10,11 +10,24 @@ module.exports = {
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
+  plugins: [
+    ['cursor-effects', {
+      size: 2, // size of the particle, default: 2
+      shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
+      zIndex: 999999999, // z-index property of the canvas, default: 999999999
+    }]
+  ],
   themeConfig: {
     // 导航栏配置
     nav: [ 
       { text: '首页', link: '/' },
-      { text: 'project', link: '/project/', icon: 'reco-date' },
+      { 
+        text: 'project', 
+        icon: 'reco-date',
+        items:[
+          {text: 'myVuepress',link: '/project/myVuepress/',}
+        ]
+      },
       {
         text: 'skill',
         icon: 'reco-date',
