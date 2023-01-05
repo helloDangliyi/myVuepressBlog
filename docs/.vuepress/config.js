@@ -49,7 +49,8 @@ module.exports = {
         text: 'project', 
         icon: 'reco-blog',
         items:[
-          {text: 'myVuepress',link: '/project/myVuepress/',}
+          {text: 'myVuepress',link: '/project/myVuepress/',},
+          {text: 'bal',link: '/project/bal/引入svg/',}
         ]
       },
       {
@@ -61,6 +62,12 @@ module.exports = {
         ]
       },
     ],
+    sidebar: {
+      '/project/bal/' : [
+        '引入svg',
+        '引入sass'
+      ]
+    },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
     type: "blog",
