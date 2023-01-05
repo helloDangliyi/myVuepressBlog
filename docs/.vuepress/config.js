@@ -8,7 +8,7 @@ module.exports = {
   title: 'Dang',
   description: 'Welcome',//首页文档描述
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/head.png' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: '/head.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   base: '/myVuepressBlog/', // 这是部署到github仓库的名称相关的配置
   markdown: {
@@ -39,17 +39,22 @@ module.exports = {
     subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     // 导航栏配置
     nav: [ 
-      { text: '首页', link: '/' },
+      { text: '首页', link: '/',icon: 'reco-home' },
+      {
+        text: "时间线",
+        link: "/timeline/",
+        icon: "reco-date"
+      },
       { 
         text: 'project', 
-        icon: 'reco-date',
+        icon: 'reco-blog',
         items:[
           {text: 'myVuepress',link: '/project/myVuepress/',}
         ]
       },
       {
         text: 'skill',
-        icon: 'reco-date',
+        icon: 'reco-blog',
         items: [
           { text: 'vue2', link: '/skill/frame/vue2/'},
           { text: 'vue3', link: '/skill/frame/vue3/'},
