@@ -57,8 +57,9 @@ module.exports = {
         text: 'skill',
         icon: 'reco-blog',
         items: [
+          { text: 'css', link: '/skill/css/'},
           { text: 'vue2', link: '/skill/frame/vue2/'},
-          { text: 'vue3', link: '/skill/frame/vue3/'},
+          { text: 'vue3', link: '/skill/frame/vue3/setup语法糖'},
         ]
       },
     ],
@@ -66,7 +67,11 @@ module.exports = {
       '/project/bal/' : [
         '引入svg',
         '引入sass'
-      ]
+      ],
+      '/skill/frame/vue3/': [
+        'setup语法糖',
+        'setup语法糖copy'
+      ],
     },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
