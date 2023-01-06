@@ -9,13 +9,13 @@ tags:
 
 # 安装
 
-1、使用 npm 下载插件
+## 1、使用 npm 下载插件
 
 ```js
 npm install node-sass sass-loader -D
 ```
 
-2、vue.config.js 配置 scss
+## 2、vue.config.js 配置 scss
 
 ```js
 module.exports = defineConfig({

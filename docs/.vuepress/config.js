@@ -70,7 +70,7 @@ module.exports = {
       ],
       '/skill/frame/vue3/': [
         'setup语法糖',
-        'setup语法糖copy'
+        'computed和watch属性'
       ],
     },
     logo: '/head.png',//导航栏左侧头像

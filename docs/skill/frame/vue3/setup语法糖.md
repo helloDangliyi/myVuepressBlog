@@ -201,7 +201,7 @@ const getChildData = () => {
 </script>
 ```
 
-### 4.语法糖其他功能
+## 4.语法糖其他功能
 
 ```
 useSlots 和 useAttrs （少用，由于大部分人是SFC模式开发，在<template/>通过<slot/>标签就可以渲染插槽）

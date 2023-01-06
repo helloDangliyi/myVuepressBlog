@@ -9,13 +9,13 @@ tags:
 
 # 安装
 
-1、添加依赖
+## 1、添加依赖
 
 ```js
 npm install svg-sprite-loader -D
 ```
 
-2、`vue.config.js`
+## 2、`vue.config.js`
 
 ```js
 module.exports = defineConfig({
@@ -42,7 +42,7 @@ module.exports = defineConfig({
 });
 ```
 
-3、在`src/components`下编写通用`SvgIcon.vue`组件
+## 3、在`src/components`下编写通用`SvgIcon.vue`组件
 
 ![](./img/svg1.png)
 
@@ -92,7 +92,7 @@ export default {
 </style>
 ```
 
-4、在`src`下创建`icons`文件夹，并添加入口文件`index.js`,增加`svg`文件夹存放`svg`文件
+## 4、在`src`下创建`icons`文件夹，并添加入口文件`index.js`,增加`svg`文件夹存放`svg`文件
 
 ![](./img/svg2.png)
 
