@@ -8,7 +8,7 @@ module.exports = {
   title: 'Dang',
   description: 'Welcome',//首页文档描述
   head: [ // 注入到当前页面的 HTML <head> 中的标签
-    ['link', { rel: 'icon', href: '/head.ico' }], // 增加一个自定义的 favicon(网页标签的图标)
+    ['link', { rel: 'icon', href: '/head.png' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
   base: '/myVuepressBlog/', // 这是部署到github仓库的名称相关的配置
   markdown: {
@@ -22,9 +22,9 @@ module.exports = {
     }],
     ['dynamic-title', {
       showIcon: '/head.png',
-      showText: '客官欢迎回来~',
+      showText: '欢迎回来~',
       hideIcon: '/head.png',
-      hideText: '客官不要走嘛~',
+      hideText: '不要走嘛~',
       recoverTime: 2000,
    }],
    ['one-click-copy', {
@@ -35,7 +35,7 @@ module.exports = {
   }]
   ],
   themeConfig: {
-    // codeTheme: 'tomorrow',
+    author: "dang",
     subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     // 导航栏配置
     nav: [ 
@@ -87,7 +87,7 @@ module.exports = {
         text: '标签'      // 默认文案 “标签”
       },
       socialLinks: [     // 信息栏展示社交信息
-        { icon: 'reco-github', link: 'https://github.com/recoluan' },
+        { icon: 'reco-github', link: 'https://github.com/trending' },
         { icon: 'reco-npm', link: 'https://www.npmjs.com/~reco_luan' }
       ]
     },
