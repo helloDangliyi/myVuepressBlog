@@ -58,6 +58,7 @@ module.exports = {
         icon: 'reco-blog',
         items: [
           { text: 'css', link: '/skill/css/'},
+          { text: 'typescript', link: '/skill/typescript/第一章：快速入门'},
           { text: 'vue2', link: '/skill/frame/vue2/'},
           { text: 'vue3', link: '/skill/frame/vue3/setup语法糖'},
         ]
@@ -72,6 +73,10 @@ module.exports = {
         'setup语法糖',
         'computed和watch属性'
       ],
+      '/skill/typescript/' : [
+        '第一章：快速入门',
+        '第二章：面向对象'
+      ]
     },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
