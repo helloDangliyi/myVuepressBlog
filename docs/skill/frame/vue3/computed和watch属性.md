@@ -6,3 +6,5 @@ categories:
 tags:
   - vue3
 ---
+
+对象和数组的赋值
