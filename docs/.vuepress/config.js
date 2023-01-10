@@ -71,7 +71,8 @@ module.exports = {
       ],
       '/skill/frame/vue3/': [
         'setup语法糖',
-        'computed和watch属性'
+        'computed和watch属性',
+        '响应式'
       ],
       '/skill/typescript/' : [
         '第一章：快速入门',
