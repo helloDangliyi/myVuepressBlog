@@ -67,12 +67,13 @@ module.exports = {
     sidebar: {
       '/project/bal/' : [
         '引入svg',
-        '引入sass'
+        '引入sass',
+        '自动批量注册公共组件'
       ],
       '/skill/frame/vue3/': [
         'setup语法糖',
         'computed和watch属性',
-        '响应式'
+        '响应式',
       ],
       '/skill/typescript/' : [
         '第一章：快速入门',
