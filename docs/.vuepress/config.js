@@ -79,7 +79,8 @@ module.exports = {
       ],
       '/skill/typescript/' : [
         '第一章：快速入门',
-        '第二章：面向对象'
+        '第二章：面向对象',
+        'ts声明变量'
       ]
     },
     logo: '/head.png',//导航栏左侧头像
