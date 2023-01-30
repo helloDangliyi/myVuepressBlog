@@ -63,6 +63,13 @@ module.exports = {
           { text: 'vue3', link: '/skill/frame/vue3/setup语法糖'},
         ]
       },
+      { 
+        text: '关注', 
+        icon: 'reco-blog',
+        items:[
+          {text: '广西人才网',link: 'https://www.gxrc.com/Article/info/d34c861a-1ac6-4e7f-baba-c16ec6a1b5f1',},
+        ]
+      },
     ],
     sidebar: {
       '/project/bal/' : [
