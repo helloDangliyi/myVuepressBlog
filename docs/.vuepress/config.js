@@ -63,6 +63,13 @@ module.exports = {
           { text: 'vue3', link: '/skill/frame/vue3/setup语法糖'},
         ]
       },
+      {
+        text: 'interview',
+        icon: 'reco-blog',
+        items: [
+          { text: 'vue2', link: '/interview/vue2/01_README'},
+        ]
+      },
       { 
         text: '关注', 
         icon: 'reco-blog',
@@ -88,7 +95,11 @@ module.exports = {
         '第一章：快速入门',
         '第二章：面向对象',
         'ts声明变量'
-      ]
+      ],
+      '/interview/vue2/': [
+        '01_README',
+        '02_README'
+      ],
     },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
