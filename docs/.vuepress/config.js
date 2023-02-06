@@ -67,6 +67,7 @@ module.exports = {
         text: 'interview',
         icon: 'reco-blog',
         items: [
+          { text: 'javascript', link: '/interview/javascript/01_README'},
           { text: 'vue2', link: '/interview/vue2/01_README'},
         ]
       },
@@ -95,6 +96,11 @@ module.exports = {
         '第一章：快速入门',
         '第二章：面向对象',
         'ts声明变量'
+      ],
+      '/interview/javascript/': [
+        '01_README',
+        '02_README',
+        '03_README',
       ],
       '/interview/vue2/': [
         '01_README',

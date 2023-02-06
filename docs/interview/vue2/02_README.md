@@ -4,7 +4,5 @@ date: 2017-12-30
 categories:
   - interview
 tags:
-  - vue2
+  - javascript
 ---
-
-'11'
