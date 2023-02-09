@@ -50,7 +50,8 @@ module.exports = {
         icon: 'reco-blog',
         items:[
           {text: 'myVuepress',link: '/project/myVuepress/',},
-          {text: 'bal',link: '/project/bal/引入svg/',}
+          {text: 'bal',link: '/project/bal/引入svg/',},
+          {text: 'm-compoents',link: '/project/m-compoents/2-1 搭建vite项目并配置路由和element-plus/',}
         ]
       },
       {
