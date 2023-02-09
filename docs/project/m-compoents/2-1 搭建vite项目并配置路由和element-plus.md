@@ -1,6 +1,6 @@
 ---
 title: 2-1 搭建vite项目并配置路由和element-plus
-date: 2017-12-30
+date: 2023-2-9
 categories:
   - project
 tags:
@@ -135,4 +135,3 @@ npm i -D sass sass-loader
 ```
 
 至此已经修改完成框架。
-
