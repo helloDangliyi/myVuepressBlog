@@ -62,6 +62,9 @@ console.log(Function.__proto__ === Function.prototype); // true
 根据这几个结论，我们就能拓展出一张更大的关系图了：
 ![](./img/prototype2.png)
 
+‌ 原型: 在 JS 中，每当定义一个对象（函数也是对象）时，对象中都会包含一些预定义的属性。其中每个函数对象都有一个 prototype 属性，这个属性指向函数的原型对象。
+原型链：函数的原型链对象 constructor 默认指向函数本身，原型对象除了有原型属性外，为了实现继承，还有一个原型链指针**proto**,该指针是指向上一层的原型对象。因此可以利用**proto**一直指向 Object 的原型对象上，而 Object 原型对象用 Object.prototype.** proto** = null 表示原型链顶端。如此形成了 js 的原型链继承。同时所有的 js 对象都有 Object 的基本防范
+
 ## 总结
 
 1、构造函数是使用了 new 关键字的函数，用来创建对象，所有函数都是 Function()的实例
