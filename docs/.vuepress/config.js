@@ -58,7 +58,7 @@ module.exports = {
         text: 'skill',
         icon: 'reco-blog',
         items: [
-          { text: 'css', link: '/skill/css/'},
+          { text: 'css', link: '/skill/css/svg样式'},
           { text: 'typescript', link: '/skill/typescript/第一章：快速入门'},
           { text: 'vue2', link: '/skill/frame/vue2/'},
           { text: 'vue3', link: '/skill/frame/vue3/setup语法糖'},
@@ -91,7 +91,8 @@ module.exports = {
         'computed和watch属性',
         '响应式',
         'vue3的$attrs',
-        'vueUse'
+        'vueUse',
+        '渲染函数'
       ],
       '/skill/typescript/' : [
         '第一章：快速入门',
