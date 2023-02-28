@@ -103,6 +103,7 @@ module.exports = {
         '01_README',
         '02_README',
         '03_README',
+        'new'
       ],
       '/interview/vue2/': [
         '01_README',
