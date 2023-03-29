@@ -107,6 +107,12 @@ module.exports = {
         '01_README',
         '02_README'
       ],
+      '/project/m-compoents/':[
+        '2-1 搭建vite项目并配置路由和element-plus',
+        '2-2 全局注册图标',
+        '2-3 伸缩菜单-完成伸缩菜单基本功能',
+        '2-4 城市选择器'
+      ]
     },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
