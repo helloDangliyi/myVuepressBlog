@@ -121,3 +121,80 @@ tags:
     ```javascript
     npm config get registry //查看当前镜像地址
     ```
+
+## 更新组件库
+
+1. 新增`demo`文件夹：把`package.json`和`index.d.ts`复制到文件夹下
+
+2. 执行命令：
+
+   ```javascript
+   npm run lib
+   ```
+
+3. 删除生成的`utils`文件夹
+
+4. 把`demo`中的`package.json`复制到Lib文件夹下，把`index.d.ts`每个文件夹下都需要添加
+
+5. `package.json`版本加1
+
+6. 执行
+
+   ```javascript
+   npm run publish
+   ```
+
+## 测试发布的组件库
+
+1. 创建新项目
+
+   ```javascript
+   npm init vite@latest my-vue-app -- -- template vue-ts
+   ```
+
+   
+
+2. 安装依赖
+
+   ```javascript
+   npm i 
+   
+   npm i -D elements-plus @element-plus/icons-vue
+   
+   npm i imooc-element-components-dang -s
+   ```
+
+   在`package.json`中可以看到
+
+   ```javascript
+   {
+   ...
+   "dependencies": {
+       "imooc-element-components-dang": "^1.0.0",
+     },
+   }
+   ```
+
+   `main.ts`中引入:
+
+   ```typescript
+   ...
+   
+   import ElementPlus from 'element-plus'
+   import 'element-plus/dist/index.css'
+   //全部引入
+   import mUI from 'imooc-element-components-dang'
+   import 'imooc-element-components-dang/style.css'
+   
+   // 单独引入
+   //import  chooseIcon from 'imooc-element-components-dang/chooseIcon'
+   //import 'imooc-element-components-dang/chooseIcon/style.css'
+   
+   const app = createApp(App)
+   app.use(ElementPlus)
+   .use(mUI)
+   //.use(chooseIcon)
+   app.mount('#app')
+   ```
+
+   
