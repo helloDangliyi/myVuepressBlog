@@ -96,28 +96,38 @@ tags:
         ```javascript
         //全局安装 nrm小工具
         npm install -g nrm 
+        //查看nrm版本号，若正常出现版本号则安装成功，否则安装失败
+        npm --version
         //查看可切换的镜像源： (*表示正在使用的镜像源)
-     nrm ls
+        nrm ls
         
-     //切换源
-        nrm use taobao
-     nrm use npm
+         //切换源
+         nrm use taobao
+         nrm use npm
         ```
 
+     若查看nrm版本号时，出现以下报错：
+
+     ![bg2](./img/bg8.png)
+     
+     解决办法：根据提示的文件路径，打开cli.js。修改为：const open = import('open');
+
+     ![bg2](./img/bg9.png)
+
      ​	2、镜像源的切换
-
+     
      ​	将 npm设置成国内的淘宝镜像，在终端中执行以下命令：
-
+  
         ```javascript
         npm config set registry  https://registry.npm.taobao.org/  #设置淘宝镜像地址
         ```
-
+     
         ​	设置为官方镜像：
-
+     
         ```javascript
         npm config set registry https://registry.npmjs.org/
         ```
-
+   
     ```javascript
     npm config get registry //查看当前镜像地址
     ```
