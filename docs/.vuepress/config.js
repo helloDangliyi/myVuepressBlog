@@ -70,6 +70,7 @@ module.exports = {
         items: [
           { text: 'javascript', link: '/interview/javascript/01_README'},
           { text: 'vue2', link: '/interview/vue2/01_README'},
+          { text: 'vue3', link: '/interview/vue3/01_README'},
         ]
       },
       { 
@@ -118,6 +119,10 @@ module.exports = {
         'new'
       ],
       '/interview/vue2/': [
+        '01_README',
+        '02_README'
+      ],
+      '/interview/vue3/': [
         '01_README',
         '02_README'
       ],
