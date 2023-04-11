@@ -92,7 +92,8 @@ module.exports = {
         '响应式',
         'vue3的$attrs',
         'vueUse',
-        '渲染函数'
+        '渲染函数',
+        'Fragment',
       ],
       '/skill/typescript/' : [
         '第一章：快速入门',
