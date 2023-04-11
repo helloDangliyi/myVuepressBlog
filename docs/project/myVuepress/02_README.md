@@ -7,7 +7,7 @@ tags:
   - vuepress
 ---
 
-## x
+## 操作
 
 1. 根目录下新建文件`deploy.sh`,代码如下：
 
@@ -39,11 +39,27 @@ tags:
    cd -
    ```
 
-2. 使用Git Bash Here 打开命令窗口，执行：
+2. 使用`Git Bash Here` 打开命令窗口，执行：
 
    ```javascript
    npm run deploy
    ```
+   
+3. `package.json`添加命令：
+
+   ```json
+   {
+      ...
+   "scripts": {
+       ...
+   
+       "build": "vuepress build docs",
+       "deploy": "bash deploy.sh"
+     }
+   }
+   ```
+
+   
 
 ## 注意
 
