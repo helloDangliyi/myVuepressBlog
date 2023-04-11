@@ -152,14 +152,16 @@ tags:
    npm init vite@latest my-vue-app -- -- template vue-ts
    ```
 
-   
+   代码放在github上，地址：
+
+   [[helloDangliyi/my-vue-app: 这是一个测试项目：主要是为了测试imooc-element-components-dang组件库发布后，在项目的引入是否成功。具体过程可查看文档： (github.com)](https://github.com/helloDangliyi/my-vue-app)](https://github.com/helloDangliyi/my-vue-app)
 
 2. 安装依赖
 
    ```javascript
    npm i 
    
-   npm i -D elements-plus @element-plus/icons-vue
+   npm i -D element-plus @element-plus/icons-vue
    
    npm i imooc-element-components-dang -s
    ```

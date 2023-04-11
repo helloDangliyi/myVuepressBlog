@@ -77,4 +77,8 @@ tags:
    git push -u origin "master"
    ```
    
-12. 
+12. 可以在服务中使用gieetPages
+
+    ![bg2](.\img\bg7.png)
+
+13. 保存后就可以出现一个网站地址。
