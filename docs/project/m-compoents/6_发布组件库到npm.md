@@ -1,5 +1,5 @@
 ---
-title: 2-6 发布组件库到npm
+title: 发布组件库到npm
 date: 2023-04-10
 categories:
   - project
@@ -63,7 +63,7 @@ tags:
 
      如果出现这个错误，就执行命令`npm config set registry https://registry.npmjs.org` 
 
-     ![bg2](.\img\bg2.png)
+     ![bg2](./img/bg2.png)
 
      
 
@@ -75,7 +75,7 @@ tags:
 
      如果报出以下错误：
 
-     ![bg2](.\img\bg3.png)
+     ![bg2](./img/bg3.png)
 
      解决办法：
 
@@ -85,7 +85,7 @@ tags:
 
      再次执行 `npm publish`
 
-     ![bg2](.\img\bg4.png)
+     ![bg2](./img/bg4.png)
 
      
 

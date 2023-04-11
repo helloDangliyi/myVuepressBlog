@@ -1,5 +1,5 @@
 ---
-title: 2-1 搭建vite项目并配置路由和element-plus
+title: 搭建vite项目并配置路由和element-plus
 date: 2023-2-9
 categories:
   - project

@@ -1,5 +1,5 @@
 ---
-title: 2-7 在github、码云部署预览项目
+title: 在github、码云部署预览项目
 date: 2023-04-10
 categories:
   - project
@@ -55,7 +55,7 @@ tags:
 
 5. 配置静态页面
 
-   ![bg2](.\img\bg5.png)
+   ![bg2](./img/bg5.png)
 
 6. 保存后就可以看见部署后的网址了。
 
@@ -79,6 +79,6 @@ tags:
    
 12. 可以在服务中使用gieetPages
 
-    ![bg2](.\img\bg7.png)
+    ![bg2](./img/bg7.png)
 
 13. 保存后就可以出现一个网站地址。

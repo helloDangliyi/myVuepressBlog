@@ -50,8 +50,8 @@ module.exports = {
         icon: 'reco-blog',
         items:[
           {text: 'myVuepress',link: '/project/myVuepress/',},
-          {text: 'bal',link: '/project/bal/引入svg/',},
-          {text: 'm-compoents',link: '/project/m-compoents/2-1 搭建vite项目并配置路由和element-plus/',}
+          {text: 'bal',link: '/project/bal/引入svg',},
+          {text: 'm-compoents',link: '/project/m-compoents/1_搭建vite项目并配置路由和element-plus',}
         ]
       },
       {
@@ -86,6 +86,16 @@ module.exports = {
         '引入sass',
         '自动批量注册公共组件'
       ],
+      '/project/m-compoents/':[
+        '1_搭建vite项目并配置路由和element-plus',
+        '2_全局注册图标',
+        '3_表单',
+        '4_城市选择器',
+        '5_打包',
+        '6_发布组件库到npm',
+        '7_在github、码云部署预览项目',
+        '8_组件库文档',
+      ],
       '/skill/frame/vue3/': [
         'setup语法糖',
         'computed和watch属性',
@@ -111,12 +121,7 @@ module.exports = {
         '01_README',
         '02_README'
       ],
-      '/project/m-compoents/':[
-        '2-1 搭建vite项目并配置路由和element-plus',
-        '2-2 全局注册图标',
-        '2-3 伸缩菜单-完成伸缩菜单基本功能',
-        '2-4 城市选择器'
-      ]
+      
     },
     logo: '/head.png',//导航栏左侧头像
     authorAvatar: '/head.png',//首页右侧信息栏头像
