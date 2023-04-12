@@ -71,6 +71,7 @@ module.exports = {
           { text: 'javascript', link: '/interview/javascript/01_README'},
           { text: 'vue2', link: '/interview/vue2/01_README'},
           { text: 'vue3', link: '/interview/vue3/01_README'},
+          { text: '前端面试全家桶', link: '/interview/interviewBucket/01_README'},
         ]
       },
       { 
@@ -129,6 +130,11 @@ module.exports = {
       '/interview/vue3/': [
         '01_README',
         '02_README'
+      ],
+      '/interview/interviewBucket/': [
+        '01_README',
+        '02_README',
+        '03_README'
       ],
       
     },
