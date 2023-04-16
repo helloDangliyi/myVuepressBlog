@@ -73,6 +73,7 @@ module.exports = {
           { text: 'vue3', link: '/interview/vue3/01_README'},
           { text: '前端面试全家桶', link: '/interview/interviewBucket/01_README'},
           { text: '掘金面试题', link: '/interview/interviewBucketOthers/00.README'},
+          { text: 'course-wiki/基础面试-wiki/09-升级-JS异步进阶', link: '/interview/course-wiki/基础面试-wiki/09-升级-JS异步进阶/00-开始'},
         ]
       },
       { 
@@ -147,6 +148,15 @@ module.exports = {
         '07.Vue',
         '08.React',
       ],
+      '/interview/course-wiki/基础面试-wiki/09-升级-JS异步进阶/':[
+        '00-开始',
+        '01-题目',
+        '02-event-loop',
+        '03-promise',
+        '04-async',
+        '05-微任务和宏任务',
+        '06-问题解答',
+      ]
       
     },
     logo: '/head.png',//导航栏左侧头像
