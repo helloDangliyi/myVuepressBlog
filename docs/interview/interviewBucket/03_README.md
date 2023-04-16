@@ -9,9 +9,11 @@ tags:
 
 
 
+## 原理到proxy响应式的实现，和vu2的不同
 
+查看视频：
 
-
+[https://www.bilibili.com/video/BV1424y1H7yx/?spm_id_from=333.999.0.0&vd_source=e8e1a370c2eb84bc4d7e2f19e718d114](https://www.bilibili.com/video/BV1424y1H7yx/?spm_id_from=333.999.0.0&vd_source=e8e1a370c2eb84bc4d7e2f19e718d114)
 
 ## async/Promis的关系
 
@@ -61,7 +63,7 @@ https://juejin.cn/post/7177681326861418556
   
 
 ## 深拷贝
-  
+
   ```javascript
   // 深拷贝
   function deepClone(obj = {}) {
@@ -97,8 +99,18 @@ https://juejin.cn/post/7177681326861418556
   obj1.x = 101
   console.log(obj2) // x: 100
   ```
+
   
-  
-  
-  
+
+##   值类型和引用类型的区别
+
+```javascript
+const obj1 = { x: 100 , y: 200 }
+const obj2 = obj1
+let x1 = obj1.x
+obj2.x = 101
+x1 = 102
+
+console.log (obj1)
+```
 
