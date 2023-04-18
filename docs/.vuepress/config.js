@@ -135,8 +135,9 @@ module.exports = {
       ],
       '/interview/interviewBucket/': [
         '01_README',
-        '02_README',
-        '03_README'
+        'HEML&&CSS',
+        'JS-BASE',
+        'JS-WEB-API',
       ],
       '/interview/interviewBucketOthers/': [
         '00.README',
