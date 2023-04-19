@@ -292,4 +292,48 @@ console.log(res)
 
 3. 同步会阻塞代码
 
-   
+## 模块化
+
+webpack4 默认支持 ES6 Module
+
+```js
+// a.js 一个一个导出
+export function fn() {
+    console.log('fn')
+}
+export const name = 'b'
+
+////引入
+import {fn,name} from 'a.js'
+```
+
+```js
+// b.js一块导出
+function fn() {
+    console.log('fn')
+}
+const name = 'b'
+
+export {  // 注意这里不能有 default ！！！；如果使用了，那就不能解构引入
+    fn,
+    name
+}
+//引入
+import {fn,name}  from 'b.js'
+```
+
+```javascript
+//c.js 
+const xxx = {
+    name: 'zhangshan',
+    fn: ()=>{
+        console.log('fn')
+    }
+}
+
+
+export default xxx
+
+//引入
+import xxx  from 'c.js'
+```

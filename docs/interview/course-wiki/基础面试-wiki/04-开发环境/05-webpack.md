@@ -35,25 +35,48 @@ ES6 编译为 ES5
 webpack4 默认支持 ES6 Module
 
 ```js
-// 一个一个导出
+// a.js 一个一个导出
 export function fn() {
     console.log('fn')
 }
 export const name = 'b'
+
+////引入
+import {fn,name} from 'a.js'
 ```
 
 ```js
-// 一块导出
+// b.js一块导出
 function fn() {
     console.log('fn')
 }
 const name = 'b'
 
-export {  // 注意这里不能有 default ！！！
+export {  // 注意这里不能有 default ！！！；如果使用了，那就不能解构引入
     fn,
     name
 }
+//引入
+import {fn,name}  from 'b.js'
 ```
+
+```javascript
+//c.js 
+const xxx = {
+    name: 'zhangshan',
+    fn: ()=>{
+        console.log('fn')
+    }
+}
+
+
+export default xxx
+
+//引入
+import xxx  from 'c.js'
+```
+
+
 
 ## 打包到生产环境
 
@@ -61,3 +84,4 @@ export {  // 注意这里不能有 default ！！！
 - 加上 `contentHash`
 - 修改 package.json `"build": "webpack --config webpack.prod.js",`
 - 运行 `npm run build` ，看打包出来的代码是被压缩过的
+
