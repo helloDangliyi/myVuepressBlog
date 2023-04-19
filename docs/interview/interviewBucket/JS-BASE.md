@@ -1,5 +1,5 @@
 ---
-title: 面试题
+title: JS-BASE
 date: 2023-4-14
 categories:
   - interview
