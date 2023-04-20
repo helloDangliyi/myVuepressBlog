@@ -223,7 +223,7 @@ console.log('2c',c);//可以跨块访问
 
 3. 当函数作为对象的方法被调用时，`this`就会指向`该对象`
 
-4. 在class方法中调用，this`指向`返回的这个对象
+4. 在class方法中调用，this`指向`new的这个对象
 
    ```javascript
    var MyClass = function(){
