@@ -85,3 +85,29 @@ ajax(url).then(res=>{
 - API易用性
 - 是否会跟着http请求发送出去
 
+## 获取当前页面 url 参数
+
+```javascript
+// const url = 'https://www.xxx.com/path/index.html?a=100&b=200&c=300#anchor'
+function query(name) {
+    const search = location.search.substr(1) // 去掉前面的 `?`
+    const reg = new RegExp(`(^|&)${name}=([^&]*)(&|$)`, 'i')
+    const res = search.match(reg)
+    if (res === null) {
+        return null
+    }
+    return decodeURIComponent(res[2])
+}
+console.log( query('a') )// 100
+console.log( query('c') )//300
+```
+
+新的 API `URLSearchParams`
+
+```javascript
+function query(name) {
+    const pList = new URLSearchParams(location.search)
+    renturn pList.get(name)    
+}
+```
+
