@@ -72,7 +72,7 @@ module.exports = {
           { text: 'vue2', link: '/interview/vue2/01_README'},
           { text: 'vue3', link: '/interview/vue3/01_README'},
           { text: '前端面试全家桶', link: '/interview/interviewBucket/01_README'},
-          { text: '掘金面试题', link: '/interview/interviewBucketOthers/00.README'},
+          { text: 'juejin', link: '/interview/interviewBucketOthers/00.README'},
         ]
       },
       { 
