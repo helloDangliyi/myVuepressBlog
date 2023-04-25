@@ -281,12 +281,65 @@ Vuex基本概念：
 ## vdom总结
 
   - 用JS模拟DOM解构（vnode）
+
+    ![](./img/bg11.jpg)
+
   - 新旧vnode对比，得出最小的更新范围，最后更新DOM
+
   - 数据驱动试图的模式下，有效控制DOM操作
 
 ## diff算法
 
 新旧vnode对比的过程就是diff。
+
+## 模板编译
+
+- 模板是vue开发中最常用的部分，即与使用相关联的原理
+- 它不是html，有指令、插值、JS表达式，到底是什么？
+  - 模板不是html，有指令、插值、JS表达式，能实现判断、循环
+  - html是标签语言，只有JS才能实现判断、循环（图灵完备）
+  - 因此，模板一定是转换为某种JS代码，即编译模板
+- 面试不会直接问，但会通过“组件渲染和更新过程”考察
+
+
+
+- 前置知识：JS的with语法
+
+  ![](./img/bg12.jpg)
+
+- vue template complier 将模板编译为render函数
+
+- 执行render函数生成vnode，在渲染和更新
+
+- vue组件可以用render代替template
+
+  ![](./img/bg13.jpg)
+
+## vue组件时如何渲染和更新的
+
+**初次渲染过程**
+
+- 解析模板为render函数（或在开发环境已完成，vue-loader）
+- 触发响应式，监听data属性getter setter
+- 执行render函数（会触发getter：因为模板使用到的字段，会从data中取值，就会触发getter），生成vnode，patch（elem，vnode）
+
+**更新过程**
+
+- 修改data，触发setter（此前在getter中已被监听）
+- 重新执行render函数，生成newVnode
+- patch（vnode，newVnode）
+
+**完整流程图**
+
+![](./img/bg14.jpg)
+
+
+
+
+
+
+
+  
 
   
 
