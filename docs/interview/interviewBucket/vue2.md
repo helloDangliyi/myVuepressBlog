@@ -333,9 +333,25 @@ Vuex基本概念：
 
 ![](./img/bg14.jpg)
 
+## 异步渲染
 
+![](./img/bg15.jpg)
 
+## 前端路由原理
 
+- hash的特点
+  - hash变化会触发网页跳转，即浏览器的前进、后退
+  - hash变化（如修改`location.hash`的值）不会刷新页面，SPA必须的特点
+  - hash永远不会提交到server端（前端自生自灭）
+  - window.onhashchange()来监听的
+- h5 history 需要后端的支持
+  - 用url规范的路由，但跳转时不刷新页面
+  - history.pushState( )  (打开一个新路由，但是浏览器不会刷新)
+  - window.onpopstate (()=>{})   监听浏览器前进、后退
+- 俩者选择
+  - to B 的系统推荐使用hash，简单易用，对url规范不敏感
+  - to C的系统，可以考虑选择H5 history，但需要服务端支持
+  - 能选择简单的，就别用复杂的，要考虑成本和收益
 
 
 

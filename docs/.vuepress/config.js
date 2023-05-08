@@ -141,6 +141,8 @@ module.exports = {
         'http',
         '运行环境',
         'vue2',
+        'vue3',
+        'qiankun',
       ],
       '/interview/interviewBucketOthers/': [
         '00.README',
