@@ -143,6 +143,7 @@ module.exports = {
         'vue2',
         'vue3',
         'qiankun',
+        '组件'
       ],
       '/interview/interviewBucketOthers/': [
         '00.README',
