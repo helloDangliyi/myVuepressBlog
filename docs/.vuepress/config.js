@@ -51,7 +51,8 @@ module.exports = {
         items:[
           {text: 'myVuepress',link: '/project/myVuepress/01_README',},
           {text: 'bal',link: '/project/bal/引入svg',},
-          {text: 'm-compoents',link: '/project/m-compoents/1_搭建vite项目并配置路由和element-plus',}
+          {text: 'm-compoents',link: '/project/m-compoents/1_搭建vite项目并配置路由和element-plus',},
+          {text: 'main-app、sub-app',link: '/project/main-app/01_README',},
         ]
       },
       {
